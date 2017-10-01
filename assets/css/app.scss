@@ -1,0 +1,10 @@
+/* This file is for your main application scss. */
+
+$fa-font-path: "../fonts";
+@import "font-awesome";
+
+@import "variables";
+@import "bulma_overrides";
+
+@import "bulma";
+@import "custom"
