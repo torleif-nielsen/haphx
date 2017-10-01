@@ -1,0 +1,9 @@
+<div class="section">
+  <div class="container">
+    <h2>New Problem</h2>
+
+    <%= render "form.html", Map.put(assigns, :action, problem_path(@conn, :create)) %>
+
+    <span><%= link "Back", to: problem_path(@conn, :index) %></span>
+  </div>
+</div>
