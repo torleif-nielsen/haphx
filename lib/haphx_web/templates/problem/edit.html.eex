@@ -1,5 +1,26 @@
-<h2>Edit Problem</h2>
+<section class="hero">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        Edit Problem
+      </h1>
+      <hr>
+      <h2 class="subtitle">
+        <span>
+          <span>
+            <%= link "Back",
+                to: problem_path(@conn, :index),
+                class: "button is-info" %>
+          </span>
+        </span>
+      </h2>
+    </div>
+  </div>
+</section>
 
-<%= render "form.html", Map.put(assigns, :action, problem_path(@conn, :update, @problem)) %>
+<div class="section">
+  <div class="container">
+    <%= render "form.html", Map.put(assigns, :action, problem_path(@conn, :update, @problem)) %>
 
-<span><%= link "Back", to: problem_path(@conn, :index) %></span>
+  </div>
+</div>

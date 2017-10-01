@@ -4,6 +4,14 @@
       <h1 class="title">
         All Problems
       </h1>
+      <hr>
+      <h2 class="subtitle">
+        <span>
+          <%= link "New Problem",
+              to: problem_path(@conn, :new),
+              class: "button is-primary" %>
+        </span>
+      </h2>
     </div>
   </div>
 </section>
@@ -25,7 +33,7 @@
           <td><%= problem.title %></td>
           <td><%= problem.body %></td>
 
-          <td class="width-20" colspan="3">
+          <td class="width-15" colspan="3">
             <span><%= link "Show", to: problem_path(@conn, :show, problem), class: "button is-small is-primary" %></span>
             <span><%= link "Edit", to: problem_path(@conn, :edit, problem), class: "button is-small is-warning" %></span>
             <span>
@@ -40,7 +48,5 @@
     <% end %>
       </tbody>
     </table>
-
-    <span><%= link "New Problem", to: problem_path(@conn, :new) %></span>
   </div>
 </div>

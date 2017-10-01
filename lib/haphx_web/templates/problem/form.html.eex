@@ -5,19 +5,23 @@
     </div>
   <% end %>
 
-  <div class="form-group">
-    <%= label f, :title, class: "control-label" %>
-    <%= text_input f, :title, class: "form-control" %>
+  <div class="field">
+    <%= label f, :title, class: "label" %>
+    <div class="control">
+      <%= text_input f, :title, class: "input" %>
+    </div>
     <%= error_tag f, :title %>
   </div>
 
-  <div class="form-group">
-    <%= label f, :body, class: "control-label" %>
-    <%= textarea f, :body, class: "form-control" %>
+  <div class="field">
+    <%= label f, :body, class: "label" %>
+    <div class="control">
+      <%= textarea f, :body, class: "textarea" %>
+    </div>
     <%= error_tag f, :body %>
   </div>
 
-  <div class="form-group">
-    <%= submit "Submit", class: "btn btn-primary" %>
+  <div class="field">
+    <%= submit "Submit", class: "button is-primary" %>
   </div>
 <% end %>
