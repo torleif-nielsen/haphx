@@ -1,18 +1,36 @@
-<h2>Show Problem</h2>
+<section class="hero">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        Problem Details
+      </h1>
+      <hr>
+      <h2 class="subtitle">
+        <span>
+          <span>
+            <%= link "Back",
+                to: problem_path(@conn, :index),
+                class: "button is-info" %>
+          </span>
+          <span>
+            <%= link "Edit",
+                to: problem_path(@conn, :edit, @problem),
+                class: "button is-warning" %>
+          </span>
+        </span>
+      </h2>
+    </div>
+  </div>
+</section>
 
-<ul>
-
-  <li>
-    <strong>Title:</strong>
-    <%= @problem.title %>
-  </li>
-
-  <li>
-    <strong>Body:</strong>
-    <%= @problem.body %>
-  </li>
-
-</ul>
-
-<span><%= link "Edit", to: problem_path(@conn, :edit, @problem) %></span>
-<span><%= link "Back", to: problem_path(@conn, :index) %></span>
+<div class="section">
+  <div class="container">
+    <div class="content">
+      <h1 class="is-large">Title</h1>
+      <p><%= @problem.title %></p>
+      <h2 class="is-medium">Body</h2>
+      <p><%= @problem.body %></p>
+    </div>
+  </ul>
+  </div>
+</div>
