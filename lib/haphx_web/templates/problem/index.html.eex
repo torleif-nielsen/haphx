@@ -18,7 +18,7 @@
 
 <div class="section">
   <div class="container">
-    <table class="table is-narrow is-fullwidth">
+    <table class="table is-fullwidth">
       <thead>
         <tr>
           <th>Title</th>
@@ -31,7 +31,7 @@
     <%= for problem <- @problems do %>
         <tr>
           <td><%= problem.title %></td>
-          <td><%= problem.body %></td>
+          <td><%= truncate(problem.body, length: 140, omission: "...") %></td>
 
           <td class="width-15" colspan="3">
             <span><%= link "Show", to: problem_path(@conn, :show, problem), class: "button is-small is-primary" %></span>

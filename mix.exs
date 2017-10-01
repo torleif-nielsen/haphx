@@ -42,6 +42,7 @@ defmodule Haphx.Mixfile do
       {:phoenix_html, "~> 2.10"},
       {:phoenix_live_reload, "~> 1.0", only: :dev},
       {:phoenix_pubsub, "~> 1.0"},
+      {:phoenix_html_simplified_helpers, "~> 1.3"}
     ]
   end
 
