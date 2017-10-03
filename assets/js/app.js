@@ -19,3 +19,25 @@ import "phoenix_html"
 // paths "./socket" or full ones "web/static/js/socket".
 
 // import socket from "./socket"
+
+
+let keydownCallback = (a, b) => {
+  console.log(editor.getData())
+  // console.log(`${a.name} ${b.keyCode}`)
+}
+
+let editor = document.getElementById("editor")
+
+editor && CKEditor
+  .create(editor, {})
+  .then( ckeditor => {
+    editor = ckeditor
+    ckeditor.editing.view.on("keydown", keydownCallback)
+  })
+
+// let vueEditor = new Vue({
+//     el: '#vueEditor',
+//     data: {
+//       posts: [{body: "Hello from Vue"}]
+//     }
+//   })
