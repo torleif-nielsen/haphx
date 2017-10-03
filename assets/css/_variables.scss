@@ -1,0 +1,18 @@
+// Colors
+$primary-color-dark:   #303F9F;
+$primary-color:        #3F51B5;
+$primary-color-light:  #C5CAE9;
+$primary-color-text:   #FFFFFF;
+$accent-color:         #607D8B;
+$primary-text-color:   #212121;
+$secondary-text-color: #757575;
+$divider-color:        #BDBDBD;
+
+// Color overrides
+$primary: $primary-color;
+$info: $primary-color-light;
+$info-invert: rgba(0,0,0,0.7);
+
+// Sizes
+$radius: 2px;
+$radius-large: 2px;

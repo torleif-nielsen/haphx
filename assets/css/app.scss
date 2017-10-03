@@ -2,6 +2,7 @@
 
 $fa-font-path: "../fonts";
 @import "font-awesome";
+@import "sass/utilities/initial-variables"; // Bulma initial variables
 
 @import "variables";
 @import "bulma_overrides";
