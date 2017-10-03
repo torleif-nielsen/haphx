@@ -16,7 +16,7 @@
   <div class="field">
     <%= label f, :body, class: "label" %>
     <div class="control">
-      <%= textarea f, :body, class: "textarea" %>
+      <%= textarea f, :body, [class: "textarea", id: "editor", rows: 4] %>
     </div>
     <%= error_tag f, :body %>
   </div>
@@ -25,3 +25,6 @@
     <%= submit "Submit", class: "button is-primary" %>
   </div>
 <% end %>
+
+<script type="text/javascript">
+</script>

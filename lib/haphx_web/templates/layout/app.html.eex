@@ -12,9 +12,9 @@
   </head>
 
   <body>
-    <nav class="navbar" role="navigation" aria-label="main navigation">
+    <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
       <div class="navbar-brand">
-        <%= link "Home", to: page_path(@conn, :index), class: "navbar-item" %>
+        <%= link "HA", to: page_path(@conn, :index), class: "navbar-item" %>
         <button class="button navbar-burger">
           <span></span>
           <span></span>
@@ -29,7 +29,7 @@
     <main role="main">
       <%= render @view_module, @view_template, assigns %>
     </main>
-    
+
     <script src="<%= static_path(@conn, "/js/app.js") %>"></script>
   </body>
 </html>
