@@ -74,7 +74,8 @@ exports.config = {
     enabled: true,
     whitelist: ["phoenix", "phoenix_html", "vue"],
     globals: {
-      Vue: "vue/dist/vue.common.js"
+      Vue: "vue/dist/vue.common.js",
+      CKEditor: "@ckeditor/ckeditor5-build-classic/"
     },
   }
 };
